@@ -13,3 +13,9 @@ body {
 .wrapper {
   width: 80%;
 }
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+  }  
+}
