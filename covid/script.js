@@ -35,7 +35,7 @@ var data = {
     data: {
         labels: [],
         datasets: [{
-            label: 'Количество новых случаев COVID-19 в день',
+            label: 'В день',
             pointHoverBorderWidth: 3,
             pointHitRadius: 10,
             pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)',
@@ -47,13 +47,48 @@ var data = {
         }]
     },
     options: {
+        legend: {
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'Количество новых случаев заражения COVID-19 в день',
+            fontStyle: 'bold',
+            fontSize: 15
+        },
         scales: {
+            display: false,
             yAxes: [{
+                scaleLabel: {
+					display: false,
+					fontSize: 15,
+					labelString: "Заражений в день"
+				},
                 ticks: {
                     beginAtZero: true
+                },
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0.05)',
+                    zeroLineColor: 'rgba(0, 0, 0, 0.5)',
+                    zeroLineWidth: 2
+                    
+                }
+            }],
+            xAxes: [{
+                scaleLabel: {
+					display: false,
+					fontSize: 15,
+					labelString: "Дата"
+				},
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0.05)',
+                    zeroLineColor: 'rgba(0, 0, 0, 0.5)',
+                    zeroLineWidth: 2
                 }
             }]
-        }
+            
+        },
+
     }
 };
   
