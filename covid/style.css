@@ -15,8 +15,10 @@ body {
   width: 80%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .wrapper {
     width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }  
 }
