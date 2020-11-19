@@ -1,6 +1,6 @@
-var x = [], 
-y = [];
-var rem;
+let x = [];
+let y = [];
+let rem;
 
 function getCovidData() {
 
@@ -36,7 +36,6 @@ renderGraph(
   y.filter((el, ind) => ind > y.length - 22)
   )
 }
-
 }
 
 var daysToShowCount = 220;
@@ -46,7 +45,6 @@ getCovidData()
 window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
-
 
 })
 
