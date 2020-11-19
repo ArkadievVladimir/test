@@ -1,12 +1,9 @@
-var x = [], 
-y = [];
-var rem;
+let x = [];
+let y = [];
+let rem;
 
 function getCovidData() {
-
-
-  
-var coronaData,
+let coronaData,
 corona = new XMLHttpRequest(),
 src = 'https://api.covid19api.com/dayone/country/belarus/status/confirmed';
 corona.open('GET', src);
@@ -36,7 +33,6 @@ renderGraph(
   y.filter((el, ind) => ind > y.length - 22)
   )
 }
-
 }
 
 var daysToShowCount = 220;
@@ -46,7 +42,6 @@ getCovidData()
 window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
-
 
 })
 
