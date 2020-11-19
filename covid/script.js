@@ -3,10 +3,7 @@ let y = [];
 let rem;
 
 function getCovidData() {
-
-
-  
-var coronaData,
+let coronaData,
 corona = new XMLHttpRequest(),
 src = 'https://api.covid19api.com/dayone/country/belarus/status/confirmed';
 corona.open('GET', src);
